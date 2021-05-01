@@ -1,0 +1,100 @@
+{
+  "name": "react-saga-seed",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@types/react": "^17.0.3",
+    "@types/react-datepicker": "^3.1.8",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-select": "^4.0.13",
+    "array-move": "^3.0.1",
+    "aws-amplify": "^3.3.25",
+    "axios": "^0.21.1",
+    "beautiful-react-hooks": "^0.31.1",
+    "daypilot-pro-react": "https://npm.daypilot.org/daypilot-pro-react/trial/2020.4.4788.tar.gz",
+    "formik": "^2.2.6",
+    "husky": "^5.2.0",
+    "moment": "^2.29.1",
+    "multiselect-react-dropdown": "^1.6.11",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "rc-slider": "^9.7.2",
+    "react": "^17.0.2",
+    "react-accessible-accordion": "^3.3.4",
+    "react-autosuggest": "^10.1.0",
+    "react-big-scheduler": "^0.2.7",
+    "react-cropper": "^2.1.7",
+    "react-datepicker": "^3.6.0",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.3.1",
+    "react-loader-spinner": "^4.0.0",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-router-prop-types": "^1.0.5",
+    "react-scripts": "4.0.3",
+    "react-select": "^4.3.0",
+    "react-sortable-hoc": "^2.0.0",
+    "react-spinners": "^0.10.6",
+    "react-toastify": "^7.0.3",
+    "reactjs-popup": "^2.0.4",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "redux-toolkit": "^1.1.2",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "tailwind:css": "tailwind build src/styles/index.scss -c tailwind.config.js -o src/styles/tailwind.css",
+    "build:tailwind": "tailwindcss build src/styles/tailwind.css -o src/styles/tailwind.output.css",
+    "prestart": "npm run build:tailwind",
+    "prebuild": "npm run build:tailwind",
+    "start": "npm run tailwind:css && react-scripts start",
+    "run:dev": "npm run amplify:pull && npm run tailwind:css && react-scripts start",
+    "build": "npm run tailwind:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "pretest": "./node_modules/.bin/eslint --ignore-path .eslintignore . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretest"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-datepicker": "^3.1.8",
+    "@types/react-loader-spinner": "^3.1.0",
+    "@types/react-redux": "^7.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "autoprefixer": "^10.0.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "source-map-loader": "^1.1.0",
+    "tailwindcss": "^1.8.10",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.3"
+  }
+}

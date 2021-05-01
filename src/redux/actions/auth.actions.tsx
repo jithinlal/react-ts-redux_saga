@@ -1,0 +1,10 @@
+export const LOGIN = 'auth/login';
+export const LOGOUT = 'auth/logout';
+export const SIGNUP = 'auth/signupBuilder';
+export const CHECK_AUTH = 'auth/checkauth';
+export const CHECK_STATUS = 'auth/checkstatus';
+export const VERIFY_EMAIL = 'auth/verifyEmail';
+export const RESET_PASSWORD = 'auth/resetpassword';
+export const CHANGE_PASSWORD = 'auth/changePassword';
+export const FORGOT_PASSWORD = 'auth/forgotPassword';
+export const RESEND_VERIFY_MAIL = 'auth/resendVerifyMail';

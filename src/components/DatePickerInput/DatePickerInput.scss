@@ -1,0 +1,32 @@
+.datepicker-input {
+  .form-item {
+    .react-datepicker-wrapper {
+      width: 100%;
+  
+      .react-datepicker__input-container > input {
+        width: 100%;
+        border: 1px solid #cbd5e0;
+        color: #000;
+      }
+    }
+  
+    &.active {
+      &> label {
+        font-size: 11px;
+        top: -5px;
+      }
+    }
+
+    &.focus {
+      &> label {
+        font-size: 11px;
+        top: -5px;
+        color: blue;
+      }
+
+      .react-datepicker__input-container > input {
+        border-color: blue;
+      }
+    }
+  }
+}

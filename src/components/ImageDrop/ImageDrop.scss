@@ -1,0 +1,14 @@
+.del-bg {
+    filter: brightness(50%);
+}
+.bg-Back:hover {
+    .delImg {
+        display: flex !important;
+    }
+    .hovered-back {
+        display: flex !important;
+    }
+}
+.error-input{
+    border-color: red !important;
+}
